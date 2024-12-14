@@ -16,7 +16,7 @@ export default function Head() {
             <meta name="application-name" content="Portfolio | Afonso Veloso - Backend Developer" />
             <meta name="apple-mobile-web-app-title" content="Portfolio | Afonso Veloso - Backend Developer" />
             <link rel="icon" href="/favicon1.ico" />
-            <title>Portfolio | Afonso Veloso - Full Stack Developer</title>
+            <title>Portfolio | Afonso Veloso - Backend Developer</title>
         </>
     )
 }
