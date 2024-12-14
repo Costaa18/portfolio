@@ -18,13 +18,24 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'media.geeksforgeeks.org',
-      },
-      {
-        protocol: 'https',
         hostname: 'images.unsplash.com',
-      }
+      },
     ],
+  },
+
+
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "all", 
+          },
+        ],
+      },
+    ];
   },
 };
 
