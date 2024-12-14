@@ -13,7 +13,7 @@ const Skills = ({ skillData }: Props) => {
     const [category, setCategory] = useState(categories[0])
 
     return (
-        <SectionWrapper id='skills' className="min-h-screen mt-12 md:mt-0 mx-4 md:mx-0 xl:my-20 2xl:my-0">
+        <SectionWrapper id='skills' className="min-h-screen mt-12  mx-4  xl:my-20 2xl:my-0">
             <h2 className="text-4xl text-center">Skills</h2>
 
             <div className="md:w-1/2 overflow-x-auto scroll-hide lg:w-1/3 mx-auto mt-6 bg-white dark:bg-grey-800 p-2 flex justify-between items-center gap-3 rounded-md">
