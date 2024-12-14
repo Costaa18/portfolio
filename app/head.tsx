@@ -8,9 +8,9 @@ export default function Head() {
             <meta property="og:title" content="Portfolio | Afonso Veloso - Backend Developer" />
             <meta property="og:description"
                 content="I'm Afonso Veloso, backend developer based in Portugal. My journey in web development began during my childhood with basic html, css and javascript projects." />
-            <meta property="og:url" content="https://jigarsable.vercel.app" />
-            <meta property="og:image" content="https://jigarsable.vercel.app/portfolio-fork.png" />
-            <link rel="canonical" href="https://jigarsable.vercel.app" />
+            <meta property="og:url" content="https://afonsoveloso.com" />
+            <meta property="og:image" content="https://afonsoveloso.com/portfolio-fork.png" />
+            <link rel="canonical" href="https://afonsoveloso.com" />
             <meta name="author" content="Afonso Veloso" />
             <meta name="language" content="English" />
             <meta name="application-name" content="Portfolio | Afonso Veloso - Backend Developer" />
