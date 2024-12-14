@@ -1,12 +1,13 @@
-"use client"; 
+"use client";
 
 import { useEffect, useState } from "react";
 import './globals.css';
 import { Poppins } from 'next/font/google';
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import Head from './head';
-import { FaNodeJs } from 'react-icons/fa'; 
+import { FaNodeJs } from 'react-icons/fa';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -17,16 +18,16 @@ const poppins = Poppins({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(true); 
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
       setTheme(savedTheme);
     } else {
-      setTheme("dark"); 
+      setTheme("dark");
     }
-    setIsLoading(false); 
+    setIsLoading(false);
   }, []);
 
   if (isLoading) {
@@ -55,9 +56,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           <div className="min-h-screen">
             {children}
+            <SpeedInsights />
+            <Analytics />
           </div>
         </ThemeProvider>
-        <Analytics />
       </body>
     </html>
   );
