@@ -1,4 +1,4 @@
-"use client"; // Isso diz ao Next.js que o código abaixo deve ser executado no lado do cliente
+"use client"; 
 
 import { useEffect, useState } from "react";
 import './globals.css';
@@ -6,7 +6,7 @@ import { Poppins } from 'next/font/google';
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from '@vercel/analytics/react';
 import Head from './head';
-import { FaNodeJs } from 'react-icons/fa'; // Importa o ícone de Node.js
+import { FaNodeJs } from 'react-icons/fa'; 
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -16,22 +16,19 @@ const poppins = Poppins({
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<string | null>(null); // Mantém o tema no estado
-  const [isLoading, setIsLoading] = useState(true); // Estado para controle de loading
+  const [theme, setTheme] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(true); 
 
   useEffect(() => {
-    // Recupera o tema armazenado no localStorage, se houver
     const savedTheme = localStorage.getItem("theme");
-    console.log("Saved", savedTheme);
     if (savedTheme) {
       setTheme(savedTheme);
     } else {
-      setTheme("dark"); // Tema padrão, caso não haja configuração salva
+      setTheme("dark"); 
     }
-    setIsLoading(false); // Tema carregado, desativa o loading
+    setIsLoading(false); 
   }, []);
 
-  // Exibe o carregamento enquanto o tema estiver sendo recuperado
   if (isLoading) {
     return (
       <html lang="en">
@@ -46,7 +43,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     );
   }
 
-  // Depois que o tema for recuperado, renderiza com a classe apropriada
   return (
     <html lang="en" className={theme ?? "dark"} style={{ colorScheme: theme ?? "dark" }}>
       <Head />
