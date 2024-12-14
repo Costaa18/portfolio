@@ -6,6 +6,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { SiNestjs } from "react-icons/si";
 import { CgClose, CgMenuRight } from 'react-icons/cg';
+import { FaNodeJs } from 'react-icons/fa';
 
 export default function Header({ logo }: { logo: string }) {
 
@@ -28,7 +29,11 @@ export default function Header({ logo }: { logo: string }) {
             <nav className='lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex items-center justify-between'>
 
                 <Link href={'/'} className='2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 transition-colors duration-300'>
-                    {logo === 'Afonso Veloso' ? <SiNestjs size={28} /> : <span className='text-lg font-medium'>{logo.split(' ')[0]}</span>}
+                    <span className='flex gap-2 items-center'>
+                        <FaNodeJs size={28} />
+                        <span className='text-lg font-medium'>Afonso Veloso</span>
+                    </span>
+
                 </Link>
 
                 <ul className='flex items-center gap-8'>
@@ -55,7 +60,10 @@ export default function Header({ logo }: { logo: string }) {
             </nav>
 
             <nav className='p-4 flex sm:hidden items-center justify-between'>
-                {logo === 'Afonso Veloso' ? <SiNestjs size={28} /> : <span className='text-lg font-medium'>{logo.split(' ')[0]}</span>}
+                <span className='flex gap-2 items-center'>
+                    <FaNodeJs size={28} />
+                    <span className='text-lg font-medium'>Afonso Veloso</span>
+                </span>
                 <div className='flex items-center gap-4'>
                     <span
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
