@@ -28,7 +28,6 @@
       ]
     },
     // Adicionado para maior flexibilidade
-    "suppressImplicitAnyIndexErrors": true,
     "allowSyntheticDefaultImports": true,
     "strictNullChecks": false
   },
