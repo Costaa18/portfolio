@@ -1,12 +1,11 @@
 'use client';
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import Link from 'next/link'
-import { Link as ScrollLink } from 'react-scroll'
-import { FiSun, FiMoon } from 'react-icons/fi'
-import { FaNodeJs } from 'react-icons/fa'
+import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
+import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
+import { FiSun, FiMoon } from 'react-icons/fi';
 import { SiNestjs } from "react-icons/si";
-import { CgClose, CgMenuRight } from 'react-icons/cg'
+import { CgClose, CgMenuRight } from 'react-icons/cg';
 
 export default function Header({ logo }: { logo: string }) {
 
