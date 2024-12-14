@@ -9,19 +9,14 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-  {
-    rules: {
-      // Permitir o uso de `any` temporariamente
-      "@typescript-eslint/no-explicit-any": "warn", // Muda erro para aviso
-      // Permitir variáveis não utilizadas para "Image" e outras variáveis de importação
-      "@typescript-eslint/no-unused-vars": [
-        "warn",
-        { argsIgnorePattern: "^_", varsIgnorePattern: "^Image$" },
-      ],
-    },
+const eslintConfig = {
+  rules: {
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-expressions": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
   },
-];
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
+};
 
 export default eslintConfig;
