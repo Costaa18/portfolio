@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,11 +9,22 @@ export default {
   ],
   theme: {
     extend: {
+      // fontFamily: {
+      //   poppins: ['var(--font-poppins)']
+      // },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        grey: {
+          800: '#18141c',
+          900: '#120f16'
+        },
+        yellow: {
+          400: '#FEDE00',
+        }
       },
+      backgroundImage: {
+        heropattern: "url(/herobgc.jpg)",
+      }
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 } satisfies Config;
