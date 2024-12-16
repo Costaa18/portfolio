@@ -40,6 +40,7 @@ export default function Header({ logo }: { logo: string }) {
                     {navs.map((e, i) => (
                         <li key={i}>
                             <ScrollLink
+                                href={`#${e}`}
                                 className='hover:text-violet-700 hover:dark:text-violet-500 transition-colors capitalize cursor-pointer'
                                 to={e}
                                 offset={-60}
