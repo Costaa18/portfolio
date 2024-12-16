@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+
   images: {
     remotePatterns: [
       {
@@ -31,7 +32,7 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: "X-Robots-Tag",
-            value: "all", 
+            value: "all",
           },
         ],
       },
