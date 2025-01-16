@@ -52,11 +52,11 @@ export default function Header({ logo }: { logo: string }) {
                             </ScrollLink>
                         </li>
                     ))}
-                    <span
+                    <button
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                         className='hover:bg-gray-100 hover:dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
                         {theme === 'dark' ? <FiSun /> : <FiMoon />}
-                    </span>
+                    </button>
                 </ul>
             </nav>
 
@@ -66,11 +66,11 @@ export default function Header({ logo }: { logo: string }) {
                     <span className='text-lg font-medium'>Afonso Veloso</span>
                 </span>
                 <div className='flex items-center gap-4'>
-                    <span
+                    <button
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                         className='bg-gray-100 dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
                         {theme === 'dark' ? <FiSun /> : <FiMoon />}
-                    </span>
+                    </button>
                     <CgMenuRight size={20} onClick={() => setNavCollapse(false)} />
                 </div>
             </nav>
