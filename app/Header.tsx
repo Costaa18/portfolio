@@ -8,7 +8,7 @@ import { SiNestjs } from "react-icons/si";
 import { CgClose, CgMenuRight } from 'react-icons/cg';
 import { FaNodeJs } from 'react-icons/fa';
 
-export default function Header({ logo }: { logo: string }) {
+export default function Header() {
 
     const [navCollapse, setNavCollapse] = useState(true)
     const [scroll, setScroll] = useState(false)
@@ -52,11 +52,11 @@ export default function Header({ logo }: { logo: string }) {
                             </ScrollLink>
                         </li>
                     ))}
-                    <span
+                    <button
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                         className='hover:bg-gray-100 hover:dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
                         {theme === 'dark' ? <FiSun /> : <FiMoon />}
-                    </span>
+                    </button>
                 </ul>
             </nav>
 
