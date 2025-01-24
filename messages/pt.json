@@ -1,0 +1,141 @@
+{
+    "Hero": {
+        "greeting": "Olá",
+        "iam": "Sou o",
+        "i am into": "Eu trabalho com",
+        "name": "Afonso Veloso",
+        "titles": "Desenvolvimento Backend, Desenvolvimento Web",
+        "shortDesc": "Eu foco no desenvolvimento de aplicações web amigáveis que atendam aos requisitos do cliente, com atenção aos detalhes, escalabilidade e desempenho.",
+        "resume": "Currículo",
+        "resumeLink": "/Afonso_Veloso_Resume_pt.pdf"
+    },
+    "Skills": {
+        "title": "Habilidades"
+    },
+    "SkillsData": {
+        "Frontend": {
+            "title": "Frontend",
+            "React": {
+                "name": "React",
+                "image": "/skills/react.svg",
+                "category": "Frontend"
+            },
+            "NextJS": {
+                "name": "NextJS",
+                "image": "/skills/nextjs.svg",
+                "category": "Frontend"
+            },
+            "JavaScript": {
+                "name": "JavaScript",
+                "image": "/skills/javascript.svg",
+                "category": "Frontend"
+            },
+            "TypeScript": {
+                "name": "TypeScript",
+                "image": "/skills/typescript.svg",
+                "category": "Frontend"
+            },
+            "Shadcn/ui": {
+                "name": "Shadcn/ui",
+                "image": "/skills/shadcn.svg",
+                "category": "Frontend"
+            },
+            "Tailwind CSS": {
+                "name": "Tailwind CSS",
+                "image": "/skills/tailwindcss.svg",
+                "category": "Frontend"
+            },
+            "HTML5": {
+                "name": "HTML5",
+                "image": "/skills/html5.svg",
+                "category": "Frontend"
+            },
+            "CSS3": {
+                "name": "CSS3",
+                "image": "/skills/css3.svg",
+                "category": "Frontend"
+            },
+            "WordPress": {
+                "name": "WordPress",
+                "image": "/skills/wordpress.svg",
+                "category": "Frontend"
+            },
+            "Bootstrap": {
+                "name": "Bootstrap",
+                "image": "/skills/bootstrap.svg",
+                "category": "Frontend"
+            },
+            "Sass": {
+                "name": "Sass",
+                "image": "/skills/sass.svg",
+                "category": "Frontend"
+            }
+        },
+        "Backend": {
+            "title": "Backend",
+            "NodeJS": {
+                "name": "NodeJS",
+                "image": "/skills/nodejs.svg",
+                "category": "Backend"
+            },
+            "ExpressJS": {
+                "name": "ExpressJS",
+                "image": "/skills/express.svg",
+                "category": "Backend"
+            },
+            "NestJS": {
+                "name": "NestJS",
+                "image": "/skills/nestjs.svg",
+                "category": "Backend"
+            },
+            "Firebase": {
+                "name": "Firebase",
+                "image": "/skills/firebase.svg",
+                "category": "Backend"
+            },
+            "MongoDB": {
+                "name": "MongoDB",
+                "image": "/skills/mongodb.svg",
+                "category": "Backend"
+            },
+            "PostgreSQL": {
+                "name": "PostgreSQL",
+                "image": "/skills/postgres.svg",
+                "category": "Backend"
+            },
+            "MySQL": {
+                "name": "MySQL",
+                "image": "/skills/mysql.svg",
+                "category": "Backend"
+            },
+            "PHP": {
+                "name": "PHP",
+                "image": "/skills/php.svg",
+                "category": "Backend"
+            }
+        },
+        "Others": {
+            "title": "Outros",
+            "Git": {
+                "name": "Git",
+                "image": "/skills/git.svg",
+                "category": "Outros"
+            },
+            "Docker": {
+                "name": "Docker",
+                "image": "/skills/docker.svg",
+                "category": "Outros"
+            },
+            "GitHub": {
+                "name": "GitHub",
+                "image": "/skills/github.svg",
+                "category": "Outros"
+            },
+            "Postman": {
+                "name": "Postman",
+                "image": "/skills/postman.svg",
+                "category": "Outros"
+            }
+        }
+    }
+}
