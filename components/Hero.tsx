@@ -1,22 +1,20 @@
-import Image from 'next/image'
-import { useTheme } from 'next-themes'
-import { Link as ScrollLink } from 'react-scroll'
+import Image from 'next/image';
+import { useTheme } from 'next-themes';
 import Typewriter from 'typewriter-effect';
-import { IoIosArrowForward } from 'react-icons/io';
 import wavingHand from '@/public/waving-hand.gif';
 import { main } from '@/types/main';
 import Link from 'next/link';
 import { MdOutlineFileDownload } from "react-icons/md";
-
+import { useTranslations } from 'next-intl';
 
 interface HeroProps {
     mainData: main
 }
 
 const Hero = ({ mainData }: HeroProps) => {
-
+    const t = useTranslations("Hero")
     const { theme } = useTheme()
-    const { name, titles, heroImage, shortDesc, techStackImages } = mainData
+    const { heroImage, techStackImages } = mainData
 
     return (
         <section id='home' className={`${theme === 'dark' && "bg-grey-900"} relative min-h-screen w-full mx-auto overflow-hidden`}>
@@ -37,19 +35,19 @@ const Hero = ({ mainData }: HeroProps) => {
                     <div className="flex items-center gap-1">
                         <Image unoptimized={true} alt='waving-hand' width={30} height={30} src={wavingHand} />
                         <p className="text-lg md:text-xl mt-2 md:mt-1.5">
-                            Hey
+                            {t('greeting')}
                         </p>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold relative">
-                        I&apos;m {name}
+                        {t('iam')} {t('name')}
                     </h1>
                     <div className="flex flex-row items-start md:items-center gap-1.5">
                         <h2 className="text-lg md:text-2xl">
-                            I am into
+                           {t('i am into')}
                         </h2>
                         <Typewriter
                             options={{
-                                strings: titles,
+                                strings: t('titles').split(', '),
                                 autoStart: true,
                                 loop: true,
                                 deleteSpeed: 50,
@@ -61,7 +59,7 @@ const Hero = ({ mainData }: HeroProps) => {
                     </div>
 
                     <p className='text-sm md:text-base text-gray-600 dark:text-gray-300'>
-                        {shortDesc}
+                        {t('shortDesc')}
                     </p>
 
                     {/* <a href="https://sppuprep.tech" target="_blank" rel="noopener noreferrer" className="relative whitespace-nowrap before:absolute before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500 before:bg-violet-300 dark:before:bg-violet-600">
@@ -69,13 +67,13 @@ const Hero = ({ mainData }: HeroProps) => {
                     </a> */}
 
                     <Link
-                        href="/Afonso_Veloso_Resume.pdf"
+                        href={t('resumeLink')}
                         target="_blank"
                         rel="noopener noreferrer"
                         download
                         className="w-fit text-sm md:text-base py-2 px-4 cursor-pointer flex items-center gap-1 rounded-md bg-violet-600 hover:bg-violet-700 dark:bg-violet-700 hover:dark:bg-violet-800 transition-all duration-300 ease-in-out group text-white"
                     >
-                        Resume
+                        {t('resume')}
                         <MdOutlineFileDownload className="group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 ease-in-out" />
                     </Link>
 
