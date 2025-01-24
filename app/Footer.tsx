@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 
 
-export default function Footer({ socials, name }: { socials: social[], name: string }) {
+export default function Footer({ socials }: { socials: social[]}) {
 
     const { theme } = useTheme()
 
@@ -15,7 +15,7 @@ export default function Footer({ socials, name }: { socials: social[], name: str
                 <p className="text-sm mt-2 md:mt-0">Made with
                     <span className="animate-pulse"> ❤️ </span>
                     by
-                    <span className="text-violet-600"> {name}</span></p>
+                    <span className="text-violet-600"> Afonso Veloso</span></p>
 
                 {/* Social Links */}
                 <div className="flex xl:hidden items-center gap-2">
