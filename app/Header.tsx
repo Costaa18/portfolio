@@ -4,51 +4,69 @@ import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import { Link as ScrollLink } from 'react-scroll';
 import { FiSun, FiMoon } from 'react-icons/fi';
-import { SiNestjs } from "react-icons/si";
 import { CgClose, CgMenuRight } from 'react-icons/cg';
 import { FaNodeJs } from 'react-icons/fa';
+import { useMessages, useTranslations } from 'next-intl';
 
 export default function Header() {
-
-    const [navCollapse, setNavCollapse] = useState(true)
-    const [scroll, setScroll] = useState(false)
-    const { theme, setTheme } = useTheme()
+    const t = useTranslations('Header');
+    const [navCollapse, setNavCollapse] = useState(true);
+    const [scroll, setScroll] = useState(false);
+    const { theme, setTheme } = useTheme();
 
     useEffect(() => {
         const updateScroll = () => {
-            window.scrollY >= 90 ? setScroll(true) : setScroll(false)
+            window.scrollY >= 90 ? setScroll(true) : setScroll(false);
+        };
+        window.addEventListener('scroll', updateScroll);
+    }, []);
+
+    const messages = useMessages() as { 
+        Header: {
+            navbar: {
+                home: string;
+                skills: string;
+                projects: string;
+                experience: string;
+                contact: string;
+            }
         }
-        window.addEventListener('scroll', updateScroll)
-    }, [])
+    };
 
+    // Obtemos as chaves de navegação
+    const navKeys = Object.keys(messages.Header.navbar);
+    // Obtemos as traduções das chaves de navegação
+    const navs = Object.values(messages.Header.navbar);
 
-    const navs = ['home', 'skills', /* 'projects',*/ 'experience', 'contact']
+    // Criamos o mapeamento de chave para tradução
+    const navMap = navKeys.reduce((acc, key, index) => {
+        acc[key] = navs[index];  // Mapeando chave para tradução
+        return acc;
+    }, {} as Record<string, string>);
 
     return (
         <header className={`backdrop-filter backdrop-blur-lg ${scroll ? 'border-b bg-white bg-opacity-40' : 'border-b-0'} dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30 min-w-full flex flex-col fixed`}>
             <nav className='lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex items-center justify-between'>
-
                 <Link href={'/'} className='2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 transition-colors duration-300'>
                     <span className='flex gap-2 items-center'>
                         <FaNodeJs size={28} />
                         <span className='text-lg font-medium'>Afonso Veloso</span>
                     </span>
-
                 </Link>
 
                 <ul className='flex items-center gap-8'>
-                    {navs.map((e, i) => (
-                        <li key={i}>
+                    {navKeys.map((key) => (
+                        <li key={key}>
                             <ScrollLink
-                                href={`#${e}`}
+                                href={`#${key}`}  // Usando a chave para navegar para o id correto da div
                                 className='hover:text-violet-700 hover:dark:text-violet-500 transition-colors capitalize cursor-pointer'
-                                to={e}
+                                to={key}  // Usando a chave para navegar
                                 offset={-60}
                                 smooth={true}
                                 duration={500}
                                 isDynamic={true}
                             >
-                                {e}
+                                {navMap[key]}  {/* Exibindo a tradução correta */}
                             </ScrollLink>
                         </li>
                     ))}
@@ -81,18 +99,18 @@ export default function Header() {
                 <div className="flex flex-col p-4 gap-5 bg-gray-100/95 backdrop-filter backdrop-blur-sm dark:bg-grey-900/95 w-3/4">
                     <CgClose className='self-end my-2' size={20} onClick={() => setNavCollapse(true)} />
 
-                    {navs.slice(0, 3).map((e) => (
+                    {navKeys.slice(0, 4).map((key) => (
                         <ScrollLink
-                            key={e}
+                            key={key}
                             className='hover:text-purple-600 py-1.5 px-4 rounded transition-colors capitalize cursor-pointer'
-                            to={e}
+                            to={key}  // Usando a chave para navegar
                             offset={-60}
                             smooth={true}
                             duration={500}
                             isDynamic={true}
                             onClick={() => setNavCollapse(true)}
                         >
-                            {e}
+                            {navMap[key]}  {/* Exibindo a tradução correta */}
                         </ScrollLink>
                     ))}
                     <ScrollLink
@@ -106,7 +124,6 @@ export default function Header() {
                     </ScrollLink>
                 </div>
             </div>
-
         </header>
-    )
+    );
 }
