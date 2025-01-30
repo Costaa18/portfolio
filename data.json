@@ -132,25 +132,36 @@
   ],
   "projects": [
     {
-      "name": "Portfolio",
-      "image": "https://images.unsplash.com/photo-1521747116042-5c8fda7c29d1",
-      "techstack": "React, Node.js, Express",
-      "category": "Web Development",
+      "name": "BookStore IPCA",
+      "image": "https://hayqsystem.am/wp-content/uploads/2024/02/jhgj-4.jpg",
+      "techstack": "C#",
+      "category": "Desktop Development",
       "links": {
-        "visit": "https://example.com/portfolio",
-        "code": "https://github.com/joaosilva/portfolio",
-        "video": "https://youtube.com/watch?v=example"
+        "visit": "",
+        "code": "https://github.com/Costaa18/BookStore-IPCA",
+        "video": ""
       }
     },
     {
-      "name": "Blog",
-      "image": "https://images.unsplash.com/photo-1562858081-d4ab1a8751b5",
-      "techstack": "Next.js, MongoDB",
+      "name": "Portfolio",
+      "image": "/projects/portfolio.png",
+      "techstack": "NextJS, Tailwind CSS, Typescript",
       "category": "Web Development",
       "links": {
-        "visit": "https://example.com/blog",
-        "code": "https://github.com/joaosilva/blog",
-        "video": "https://youtube.com/watch?v=example"
+        "visit": "https://afonsoveloso.com",
+        "code": "https://github.com/Costaa18/portfolio",
+        "video": ""
+      }
+    },
+    {
+      "name": "NestJS Microservices + Redis",
+      "image": "https://nestjs.com/img/nest-og.png",
+      "techstack": "NestJS, MicroServices, Supabase, Firebase, Redis, Docker, Typescript, TurboPack",
+      "category": "Web Development",
+      "links": {
+        "visit": "",
+        "code": "https://github.com/Costaa18/weather-turbo",
+        "video": ""
       }
     }
   ],
