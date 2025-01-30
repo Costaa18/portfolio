@@ -28,7 +28,8 @@ const HomePage = ({ data }: Props) => {
             <Hero mainData={data.main} />
             <Socials socials={data.socials} />
             <Skills/>
-            <Experiences experienceData={data.experiences} educationData={data.educations} />
+            <Projects projectsData={data.projects} />
+            <Experiences />
             <Contact />
             <Footer socials={data.socials} />
         </>
