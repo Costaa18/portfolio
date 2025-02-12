@@ -33,41 +33,40 @@ const Projects = () => {
   const projectsMessages = useMessages() as unknown as ProjectsMessages;
 
   // Filtra apenas categorias (excluindo "title")
-  const categories = Object.keys(projectsMessages.Projects).filter(
-    (key) => key !== "title"
-  );
+  const categories = Object.keys(projectsMessages.Projects).filter((key) => key !== "title" && key !== "techstack");
 
-  // Inicialização do estado
-  const [category, setCategory] = useState(categories[0] || ""); // Define a categoria inicial
+  // Estado inicial com a primeira categoria ou "web" como fallback
+  const [category, setCategory] = useState(categories[0] || "web");
   const [viewAll, setViewAll] = useState(false);
 
-  // Extrai os projetos da categoria
+  // Obtém o título da categoria com base no estado `category`
+  const categoryTitle = (projectsMessages.Projects[category] as Category)?.title || "";
+
+  // Extrai todos os projetos
   const projects = categories.flatMap((catKey) => {
     const categoryData = projectsMessages.Projects[catKey] as Category;
 
     if (typeof categoryData === "string") {
-      return []; // Caso seja uma string (não deveria acontecer, mas é seguro).
+      return []; // Garante que categorias inválidas sejam ignoradas
     }
 
-    const categoryTitle = categoryData.title;
     const projectKeys = Object.keys(categoryData).filter((key) => key !== "title");
 
     return projectKeys.map((projectKey) => ({
-      ...(typeof categoryData[projectKey] === "object" ? categoryData[projectKey] : {}), // Dados do projeto.
-      category: categoryTitle, // Adiciona o título da categoria ao projeto.
+      ...(typeof categoryData[projectKey] === "object" ? categoryData[projectKey] : {}), // Obtém os dados do projeto
+      category: categoryData.title, // Usa o título correto da categoria
     }));
   });
 
-  // Função para filtrar projetos por categoria
-  const filteredProjects = projects.filter((p) => p.category === category);
+  // Filtra os projetos apenas da categoria selecionada
+  const filteredProjects = projects.filter((p) => p.category === categoryTitle);
 
   const filterProjects = (cat: string) => {
     setViewAll(false);
     setCategory(cat);
   };
 
-  console.log("Categories" + categories); 
-  console.log("Projects" + filteredProjects);
+  console.log("Projects", JSON.stringify(projects));
 
   return (
     <SectionWrapper id="projects" className="mx-4 md:mx-0 min-h-screen">
@@ -81,14 +80,12 @@ const Projects = () => {
           return (
             <span
               key={i}
-              onClick={() => filterProjects(c)}
+              onClick={() => filterProjects(c)} // Mantém a chave "web" ou "desktop"
               className={`p-1.5 md:p-2 w-full text-sm md:text-base text-center capitalize rounded-md ${
-                category === c
-                  ? "bg-violet-600 text-white"
-                  : "hover:bg-gray-100 hover:dark:bg-grey-900"
+                category === c ? "bg-violet-600 text-white" : "hover:bg-gray-100 hover:dark:bg-grey-900"
               } cursor-pointer transition-all`}
             >
-              {categoryData.title}
+              {categoryData.title} {/* Mostra o nome real da categoria */}
             </span>
           );
         })}
@@ -96,20 +93,17 @@ const Projects = () => {
 
       {/* Grid de Projetos */}
       <div className="md:mx-6 lg:mx-auto lg:w-5/6 2xl:w-3/4 my-4 md:my-8 mx-auto grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-10">
-  {filteredProjects
-    .slice(0, viewAll ? filteredProjects.length : 6)
-    .map((p, i) => (
-      <ProjectCard
-        key={i}
-        name={p.name || ""}
-        image={p.image || ""}
-        techstack={p.techstack || ""}
-        category={p.category}
-        links={p.links || { visit: "", code: "", video: "" }}
-      />
-    ))}
-</div>
-
+        {filteredProjects.slice(0, viewAll ? filteredProjects.length : 6).map((p, i) => (
+          <ProjectCard
+            key={i}
+            name={p.name || ""}
+            image={p.image || ""}
+            techstack={p.techstack || ""}
+            category={p.category}
+            links={p.links || { visit: "", code: "", video: "" }}
+          />
+        ))}
+      </div>
 
       {/* Botão View All */}
       {filteredProjects.length > 6 && (
@@ -127,27 +121,44 @@ export default Projects;
 
 type MouseEventHandler = (event: React.MouseEvent<HTMLButtonElement>) => void;
 
-export const ViewAll = ({ handleClick, title, scrollTo }: { handleClick: MouseEventHandler, title: string, scrollTo: string }) => {
-    return (
-        <>
-            <div className="bg-white dark:bg-grey-900 w-4/5 mx-auto blur-xl z-20 -translate-y-14 h-16"></div>
-            <div className="text-center -translate-y-24">
-                {title === 'View All' ?
-                    <button onClick={handleClick} className={`bg-violet-600 text-white px-4 ${title === 'View All' ? 'animate-bounce' : 'animate-none'} py-1.5 rounded-md hover:shadow-xl transition-all`}>
-                        {title}
-                    </button>
-                    :
-                    <Link
-                        to={scrollTo}
-                        className={`bg-violet-600 text-white px-4 ${title === 'View All' ? 'animate-bounce' : 'animate-none'} cursor-pointer py-1.5 rounded-md hover:shadow-xl transition-all`}
-                        offset={-60}
-                        smooth={true}
-                        duration={500}
-                        // @ts-ignore
-                        onClick={() => handleClick()}
-                    >{title}</Link>
-                }
-            </div>
-        </>
-    )
-}
+export const ViewAll = ({
+  handleClick,
+  title,
+  scrollTo,
+}: {
+  handleClick: MouseEventHandler;
+  title: string;
+  scrollTo: string;
+}) => {
+  return (
+    <>
+      <div className="bg-white dark:bg-grey-900 w-4/5 mx-auto blur-xl z-20 -translate-y-14 h-16"></div>
+      <div className="text-center -translate-y-24">
+        {title === "View All" ? (
+          <button
+            onClick={handleClick}
+            className={`bg-violet-600 text-white px-4 ${
+              title === "View All" ? "animate-bounce" : "animate-none"
+            } py-1.5 rounded-md hover:shadow-xl transition-all`}
+          >
+            {title}
+          </button>
+        ) : (
+          <Link
+            to={scrollTo}
+            className={`bg-violet-600 text-white px-4 ${
+              title === "View All" ? "animate-bounce" : "animate-none"
+            } cursor-pointer py-1.5 rounded-md hover:shadow-xl transition-all`}
+            offset={-60}
+            smooth={true}
+            duration={500}
+            // @ts-ignore
+            onClick={() => handleClick()}
+          >
+            {title}
+          </Link>
+        )}
+      </div>
+    </>
+  );
+};
