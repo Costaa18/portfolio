@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://afonsoveloso.com
+
+# Sitemaps
+Sitemap: https://afonsoveloso.com/sitemap.xml
