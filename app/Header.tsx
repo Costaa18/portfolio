@@ -102,10 +102,28 @@ export default function Header() {
       </nav>
 
       <nav className="p-4 flex sm:hidden items-center justify-between">
-        <span className="flex gap-2 items-center">
-          <FaNodeJs size={28} />
-          <span className="text-lg font-medium">Afonso Veloso</span>
-        </span>
+        <Link
+          href="/"
+          className="2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 transition-colors duration-300"
+        >
+          <span className="flex gap-2 items-center">
+            <svg
+              className="w-[28px] h-[28px] fill-current" // Adicionando transição ao logo também
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 105 68"
+            >
+              <path
+                d="M59.856 67.4L30.864 0.200005H47.664L73.008 59.72H63.12L88.848 0.200005H104.304L75.216 67.4H59.856Z"
+                fill="currentColor"
+              />
+              <path
+                d="M0 67.2L29.952 0H45.312L75.36 67.2H59.04L34.464 7.872H40.608L15.936 67.2H0ZM14.976 52.8L19.104 40.992H41.088L45.312 52.8H14.976Z"
+                fill="currentColor"
+              />
+            </svg>
+            {/* <span className="text-xl font-medium">Afonso Veloso</span> */}
+          </span>
+        </Link>
         <div className="flex items-center gap-4">
           <span
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
