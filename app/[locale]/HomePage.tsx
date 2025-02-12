@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { data } from "@/types/main";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -11,7 +11,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 
 interface Props {
-    data: data,
+  data: data;
 }
 
 /*
@@ -22,18 +22,18 @@ below Skills
 <Projects projectsData={data.projects} />
 */
 const HomePage = ({ data }: Props) => {
-    return (
-        <>
-            <Header />
-            <Hero mainData={data.main} />
-            <Socials socials={data.socials} />
-            <Skills/>
-            <Projects projectsData={data.projects} />
-            <Experiences />
-            <Contact />
-            <Footer socials={data.socials} />
-        </>
-    )
-}
+  return (
+    <>
+      <Header />
+      <Hero mainData={data.main} />
+      <Socials socials={data.socials} />
+      <Skills />
+      <Projects />
+      <Experiences />
+      <Contact />
+      <Footer socials={data.socials} />
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
