@@ -9,11 +9,11 @@ import { FaNodeJs } from "react-icons/fa";
 import { useMessages, useTranslations } from "next-intl";
 import { LanguageSwitcher } from "@/components/Language-Switcher";
 
-export default function Header({ logo }: { logo: string }) {
-
-    const [navCollapse, setNavCollapse] = useState(true)
-    const [scroll, setScroll] = useState(false)
-    const { theme, setTheme } = useTheme()
+export default function Header() {
+  const t = useTranslations("Header");
+  const [navCollapse, setNavCollapse] = useState(true);
+  const [scroll, setScroll] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const updateScroll = () => {
@@ -101,20 +101,21 @@ export default function Header({ logo }: { logo: string }) {
         </ul>
       </nav>
 
-            <nav className='p-4 flex sm:hidden items-center justify-between'>
-                <span className='flex gap-2 items-center'>
-                    <FaNodeJs size={28} />
-                    <span className='text-lg font-medium'>Afonso Veloso</span>
-                </span>
-                <div className='flex items-center gap-4'>
-                    <span
-                        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                        className='bg-gray-100 dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
-                        {theme === 'dark' ? <FiSun /> : <FiMoon />}
-                    </span>
-                    <CgMenuRight size={20} onClick={() => setNavCollapse(false)} />
-                </div>
-            </nav>
+      <nav className="p-4 flex sm:hidden items-center justify-between">
+        <span className="flex gap-2 items-center">
+          <FaNodeJs size={28} />
+          <span className="text-lg font-medium">Afonso Veloso</span>
+        </span>
+        <div className="flex items-center gap-4">
+          <span
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="bg-gray-100 dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors"
+          >
+            {theme === "dark" ? <FiSun /> : <FiMoon />}
+          </span>
+          <CgMenuRight size={20} onClick={() => setNavCollapse(false)} />
+        </div>
+      </nav>
 
       <div
         className={`flex min-h-screen w-screen absolute md:hidden top-0 ${
@@ -126,32 +127,33 @@ export default function Header({ logo }: { logo: string }) {
         <div className="flex flex-col p-4 gap-5 bg-gray-100/95 backdrop-filter backdrop-blur-sm dark:bg-grey-900/95 w-3/4">
           <CgClose className="self-end my-2" size={20} onClick={() => setNavCollapse(true)} />
 
-                    {navs.slice(0, 3).map((e) => (
-                        <ScrollLink
-                            key={e}
-                            className='hover:text-purple-600 py-1.5 px-4 rounded transition-colors capitalize cursor-pointer'
-                            to={e}
-                            offset={-60}
-                            smooth={true}
-                            duration={500}
-                            isDynamic={true}
-                            onClick={() => setNavCollapse(true)}
-                        >
-                            {e}
-                        </ScrollLink>
-                    ))}
-                    <ScrollLink
-                        to='contact'
-                        offset={-60}
-                        smooth={true}
-                        duration={500}
-                        onClick={() => setNavCollapse(true)}
-                        className='px-6 py-1.5 rounded-md bg-violet-600 hover:bg-violet-700 text-white text-center'>
-                        Contact
-                    </ScrollLink>
-                </div>
-            </div>
-
-        </header>
-    )
+          {navKeys.slice(0, 4).map((key) => (
+            <ScrollLink
+              key={key}
+              className="hover:text-purple-600 py-1.5 px-4 rounded transition-colors capitalize cursor-pointer"
+              to={key} // Usando a chave para navegar
+              offset={-60}
+              smooth={true}
+              duration={500}
+              isDynamic={true}
+              onClick={() => setNavCollapse(true)}
+            >
+              {navMap[key]} {/* Exibindo a tradução correta */}
+            </ScrollLink>
+          ))}
+          <ScrollLink
+            to="contact"
+            offset={-60}
+            smooth={true}
+            duration={500}
+            onClick={() => setNavCollapse(true)}
+            className="px-6 py-1.5 rounded-md bg-violet-600 hover:bg-violet-700 text-white text-center"
+          >
+            Contact
+          </ScrollLink>
+          <LanguageSwitcher />
+        </div>
+      </div>
+    </header>
+  );
 }
