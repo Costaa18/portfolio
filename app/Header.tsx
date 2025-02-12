@@ -97,7 +97,7 @@ export default function Header() {
           >
             {theme === "dark" ? <FiSun /> : <FiMoon />}
           </button>
-          <LanguageSwitcher />
+          <LanguageSwitcher /> {/* Merge Error */}
         </ul>
       </nav>
 
