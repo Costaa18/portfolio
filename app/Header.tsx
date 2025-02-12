@@ -15,15 +15,35 @@ export default function Header({ logo }: { logo: string }) {
     const [scroll, setScroll] = useState(false)
     const { theme, setTheme } = useTheme()
 
-    useEffect(() => {
-        const updateScroll = () => {
-            window.scrollY >= 90 ? setScroll(true) : setScroll(false)
-        }
-        window.addEventListener('scroll', updateScroll)
-    }, [])
+  useEffect(() => {
+    const updateScroll = () => {
+      window.scrollY >= 90 ? setScroll(true) : setScroll(false);
+    };
+    window.addEventListener("scroll", updateScroll);
+  }, []);
 
+  const messages = useMessages() as {
+    Header: {
+      navbar: {
+        home: string;
+        skills: string;
+        projects: string;
+        experience: string;
+        contact: string;
+      };
+    };
+  };
 
-    const navs = ['home', 'skills', /* 'projects',*/ 'experience', 'contact']
+  // Obtemos as chaves de navegação
+  const navKeys = Object.keys(messages.Header.navbar);
+  // Obtemos as traduções das chaves de navegação
+  const navs = Object.values(messages.Header.navbar);
+
+  // Criamos o mapeamento de chave para tradução
+  const navMap = navKeys.reduce((acc, key, index) => {
+    acc[key] = navs[index]; // Mapeando chave para tradução
+    return acc;
+  }, {} as Record<string, string>);
 
   return (
     <header
