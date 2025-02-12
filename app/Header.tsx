@@ -75,29 +75,31 @@ export default function Header({ logo }: { logo: string }) {
           </span>
         </Link>
 
-                <ul className='flex items-center gap-8'>
-                    {navs.map((e, i) => (
-                        <li key={i}>
-                            <ScrollLink
-                                href={`#${e}`}
-                                className='hover:text-violet-700 hover:dark:text-violet-500 transition-colors capitalize cursor-pointer'
-                                to={e}
-                                offset={-60}
-                                smooth={true}
-                                duration={500}
-                                isDynamic={true}
-                            >
-                                {e}
-                            </ScrollLink>
-                        </li>
-                    ))}
-                    <span
-                        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                        className='hover:bg-gray-100 hover:dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
-                        {theme === 'dark' ? <FiSun /> : <FiMoon />}
-                    </span>
-                </ul>
-            </nav>
+        <ul className="flex items-center gap-8">
+          {navKeys.map((key) => (
+            <li key={key}>
+              <ScrollLink
+                href={`#${key}`} // Usando a chave para navegar para o id correto da div
+                className="hover:text-violet-700 hover:dark:text-violet-500 transition-colors capitalize cursor-pointer"
+                to={key} // Usando a chave para navegar
+                offset={-60}
+                smooth={true}
+                duration={500}
+                isDynamic={true}
+              >
+                {navMap[key]} {/* Exibindo a tradução correta */}
+              </ScrollLink>
+            </li>
+          ))}
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="hover:bg-gray-100 hover:dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors"
+          >
+            {theme === "dark" ? <FiSun /> : <FiMoon />}
+          </button>
+          <LanguageSwitcher /> {/* Merge Error */}
+        </ul>
+      </nav>
 
             <nav className='p-4 flex sm:hidden items-center justify-between'>
                 <span className='flex gap-2 items-center'>
