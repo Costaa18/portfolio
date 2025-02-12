@@ -1,0 +1,250 @@
+{
+  "Languages": {
+    "en": "English",
+    "pt": "Portuguese"
+  },
+  "Header": {
+    "navbar": {
+      "home": "Home",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experience": "Experience",
+      "contact": "Contact"
+    }
+  },
+  "Hero": {
+    "greeting": "Hey",
+    "iam": "I'm",
+    "i am into": "I am into",
+    "name": "Afonso Veloso",
+    "titles": "Backend Development, Web Development",
+    "shortDesc": "I focus on developing user-friendly web applications that meet the client's requirements, with attention to detail, scalability, and performance.",
+    "resume": "Resume",
+    "resumeLink": "/Afonso_Veloso_Resume_en.pdf"
+  },
+  "Skills": {
+    "title": "Skills"
+  },
+  "SkillsData": {
+    "Frontend": {
+      "title": "Frontend",
+      "React": {
+        "name": "React",
+        "image": "/skills/react.svg",
+        "category": "Frontend"
+      },
+      "NextJS": {
+        "name": "NextJS",
+        "image": "/skills/nextjs.svg",
+        "category": "Frontend"
+      },
+      "JavaScript": {
+        "name": "JavaScript",
+        "image": "/skills/javascript.svg",
+        "category": "Frontend"
+      },
+      "TypeScript": {
+        "name": "TypeScript",
+        "image": "/skills/typescript.svg",
+        "category": "Frontend"
+      },
+      "Shadcn/ui": {
+        "name": "Shadcn/ui",
+        "image": "/skills/shadcn.svg",
+        "category": "Frontend"
+      },
+      "Tailwind CSS": {
+        "name": "Tailwind CSS",
+        "image": "/skills/tailwindcss.svg",
+        "category": "Frontend"
+      },
+      "HTML5": {
+        "name": "HTML5",
+        "image": "/skills/html5.svg",
+        "category": "Frontend"
+      },
+      "CSS3": {
+        "name": "CSS3",
+        "image": "/skills/css3.svg",
+        "category": "Frontend"
+      },
+      "WordPress": {
+        "name": "WordPress",
+        "image": "/skills/wordpress.svg",
+        "category": "Frontend"
+      },
+      "Bootstrap": {
+        "name": "Bootstrap",
+        "image": "/skills/bootstrap.svg",
+        "category": "Frontend"
+      },
+      "Sass": {
+        "name": "Sass",
+        "image": "/skills/sass.svg",
+        "category": "Frontend"
+      }
+    },
+    "Backend": {
+      "title": "Backend",
+      "NodeJS": {
+        "name": "NodeJS",
+        "image": "/skills/nodejs.svg",
+        "category": "Backend"
+      },
+      "ExpressJS": {
+        "name": "ExpressJS",
+        "image": "/skills/express.svg",
+        "category": "Backend"
+      },
+      "NestJS": {
+        "name": "NestJS",
+        "image": "/skills/nestjs.svg",
+        "category": "Backend"
+      },
+      "Firebase": {
+        "name": "Firebase",
+        "image": "/skills/firebase.svg",
+        "category": "Backend"
+      },
+      "MongoDB": {
+        "name": "MongoDB",
+        "image": "/skills/mongodb.svg",
+        "category": "Backend"
+      },
+      "PostgreSQL": {
+        "name": "PostgreSQL",
+        "image": "/skills/postgres.svg",
+        "category": "Backend"
+      },
+      "MySQL": {
+        "name": "MySQL",
+        "image": "/skills/mysql.svg",
+        "category": "Backend"
+      },
+      "PHP": {
+        "name": "PHP",
+        "image": "/skills/php.svg",
+        "category": "Backend"
+      }
+    },
+    "Others": {
+      "title": "Others",
+      "Git": {
+        "name": "Git",
+        "image": "/skills/git.svg",
+        "category": "Others"
+      },
+      "Docker": {
+        "name": "Docker",
+        "image": "/skills/docker.svg",
+        "category": "Others"
+      },
+      "GitHub": {
+        "name": "GitHub",
+        "image": "/skills/github.svg",
+        "category": "Others"
+      },
+      "Postman": {
+        "name": "Postman",
+        "image": "/skills/postman.svg",
+        "category": "Others"
+      }
+    }
+  },
+  "Projects": {
+    "title": "Projects",
+    "techstack": "Tech Stack",
+    "web": {
+      "title": "Web Development",
+      "nestjs_microservices": {
+        "name": "NestJS Microservices + Redis",
+        "image": "https://nestjs.com/img/nest-og.png",
+        "techstack": "NestJS, MicroServices, Supabase, Firebase, Redis, Docker, Typescript, TurboPack",
+        "category": "Web Development",
+        "links": {
+          "visit": "",
+          "code": "https://github.com/Costaa18/weather-turbo",
+          "video": ""
+        }
+      },
+      "portfolio": {
+        "name": "Portfolio",
+        "image": "/projects/portfolio.png",
+        "techstack": "NextJS, Tailwind CSS, Typescript",
+        "category": "Web Development",
+        "links": {
+          "visit": "https://afonsoveloso.com",
+          "code": "https://github.com/Costaa18/portfolio",
+          "video": ""
+        }
+      }
+    },
+    "desktop": {
+      "title": "Desktop Development",
+      "BookStore": {
+        "name": "BookStore IPCA",
+        "image": "https://hayqsystem.am/wp-content/uploads/2024/02/jhgj-4.jpg",
+        "techstack": "C#",
+        "category": "Desktop Development",
+        "links": {
+          "visit": "",
+          "code": "https://github.com/Costaa18/BookStore-IPCA",
+          "video": ""
+        }
+      }
+    }
+  },
+  "Experience": {
+    "title": "Experience",
+    "experience": "Experience",
+    "education": "Education",
+    "okay": "Ok, I got it!",
+    "view all": "View all",
+    "career": {
+      "Addup": {
+        "company": "Addup",
+        "position": "Intern",
+        "startDate": "March 2023",
+        "endDate": "July 2023",
+        "desc": "I developed multiple websites in WordPress for various companies, customizing functionalities to meet the specific needs of each client. | I acquired skills in digital marketing and managed shared hosting for the company's clients. | I developed a platform for generating and managing QR Codes using Node.js and Express, allowing the creation of personalized QR Codes (vCards, links, among others) and integrating analytics features to monitor views, geographic location, devices used, and other relevant metrics."
+      },
+      "BeIT-Solutions": {
+        "company": "BeIT-Solutions",
+        "position": "Intern",
+        "startDate": "February 2022",
+        "endDate": "March 2022",
+        "desc": "I completed training courses in SAP S/4HANA, developing skills in ERP systems. | I developed and implemented the website for the company AMI-SYS (now BeIT-Solutions) using WordPress."
+      }
+    },
+    "educations": {
+      "university": {
+        "institute": "Polytechnic Institute of Cávado and Ave",
+        "degree": "Web Development and Multimedia: CTeSP",
+        "startDate": "2023",
+        "endDate": "Present",
+        "desc": "Developing my understanding of UX/UI Design, learning the principles of creating user-centered designs and improving the user experience. | Enhancing my skills in Web Development and Desktop Application Development, with a focus on creating functional and user-friendly applications. | Gaining practical knowledge in multimedia editing and improving my understanding of project management, focusing on organizing and executing projects effectively."
+      },
+      "high school": {
+        "institute": "Camilo Castelo Branco Secondary School",
+        "degree": "Information Systems Management and Programming Technician: High School Diploma",
+        "startDate": "2020",
+        "endDate": "2023",
+        "desc": "Gained a solid understanding of Data Structures, Operating Systems, and Object-Oriented Programming, building a foundation for software development. | Acquired knowledge in Web Development and Mobile Application Development, learning to create websites and simple mobile apps. | Developed fundamental skills in MySQL, including database creation and management for web and mobile applications."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contact Me",
+    "subtitle": "Get in touch 🎉",
+    "work together": "Let's work togheter?",
+    "my box": "My inbox is always open! 💌",
+    "full name": "Full Name *",
+    "email": "Email *",
+    "message": "Message *",
+    "send": "Say Hello 👋"
+  },
+  "Footer": {
+    "made": "Made with",
+    "by": "by"
+  }
+}

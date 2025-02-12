@@ -1,8 +1,12 @@
 import Image from "next/image"
 import { useEffect, useState } from 'react'
 import { FastAverageColor } from 'fast-average-color';
-import { skill } from "@/types/main";
 import { useTheme } from "next-themes";
+
+interface skill {
+    name: string;
+    image: string;
+}
 
 const Skill = ({ name, image }: skill) => {
 

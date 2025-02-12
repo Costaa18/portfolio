@@ -1,0 +1,250 @@
+{
+    "Languages": {
+        "en": "English",
+        "pt": "Portuguese"
+    },
+    "Header": {
+        "navbar": {
+            "home": "Início",
+            "skills": "Habilidades",
+            "projects": "Projetos",
+            "experience": "Experiência",
+            "contact": "Contacto"
+        }
+    },
+    "Hero": {
+        "greeting": "Olá",
+        "iam": "Sou o",
+        "i am into": "Eu trabalho com",
+        "name": "Afonso Veloso",
+        "titles": "Desenvolvimento Backend, Desenvolvimento Web",
+        "shortDesc": "Eu foco no desenvolvimento de aplicações web amigáveis que atendam aos requisitos do cliente, com atenção aos detalhes, escalabilidade e desempenho.",
+        "resume": "Currículo",
+        "resumeLink": "/Afonso_Veloso_Resume_pt.pdf"
+    },
+    "Skills": {
+        "title": "Habilidades"
+    },
+    "SkillsData": {
+        "Frontend": {
+            "title": "Frontend",
+            "React": {
+                "name": "React",
+                "image": "/skills/react.svg",
+                "category": "Frontend"
+            },
+            "NextJS": {
+                "name": "NextJS",
+                "image": "/skills/nextjs.svg",
+                "category": "Frontend"
+            },
+            "JavaScript": {
+                "name": "JavaScript",
+                "image": "/skills/javascript.svg",
+                "category": "Frontend"
+            },
+            "TypeScript": {
+                "name": "TypeScript",
+                "image": "/skills/typescript.svg",
+                "category": "Frontend"
+            },
+            "Shadcn/ui": {
+                "name": "Shadcn/ui",
+                "image": "/skills/shadcn.svg",
+                "category": "Frontend"
+            },
+            "Tailwind CSS": {
+                "name": "Tailwind CSS",
+                "image": "/skills/tailwindcss.svg",
+                "category": "Frontend"
+            },
+            "HTML5": {
+                "name": "HTML5",
+                "image": "/skills/html5.svg",
+                "category": "Frontend"
+            },
+            "CSS3": {
+                "name": "CSS3",
+                "image": "/skills/css3.svg",
+                "category": "Frontend"
+            },
+            "WordPress": {
+                "name": "WordPress",
+                "image": "/skills/wordpress.svg",
+                "category": "Frontend"
+            },
+            "Bootstrap": {
+                "name": "Bootstrap",
+                "image": "/skills/bootstrap.svg",
+                "category": "Frontend"
+            },
+            "Sass": {
+                "name": "Sass",
+                "image": "/skills/sass.svg",
+                "category": "Frontend"
+            }
+        },
+        "Backend": {
+            "title": "Backend",
+            "NodeJS": {
+                "name": "NodeJS",
+                "image": "/skills/nodejs.svg",
+                "category": "Backend"
+            },
+            "ExpressJS": {
+                "name": "ExpressJS",
+                "image": "/skills/express.svg",
+                "category": "Backend"
+            },
+            "NestJS": {
+                "name": "NestJS",
+                "image": "/skills/nestjs.svg",
+                "category": "Backend"
+            },
+            "Firebase": {
+                "name": "Firebase",
+                "image": "/skills/firebase.svg",
+                "category": "Backend"
+            },
+            "MongoDB": {
+                "name": "MongoDB",
+                "image": "/skills/mongodb.svg",
+                "category": "Backend"
+            },
+            "PostgreSQL": {
+                "name": "PostgreSQL",
+                "image": "/skills/postgres.svg",
+                "category": "Backend"
+            },
+            "MySQL": {
+                "name": "MySQL",
+                "image": "/skills/mysql.svg",
+                "category": "Backend"
+            },
+            "PHP": {
+                "name": "PHP",
+                "image": "/skills/php.svg",
+                "category": "Backend"
+            }
+        },
+        "Others": {
+            "title": "Outros",
+            "Git": {
+                "name": "Git",
+                "image": "/skills/git.svg",
+                "category": "Outros"
+            },
+            "Docker": {
+                "name": "Docker",
+                "image": "/skills/docker.svg",
+                "category": "Outros"
+            },
+            "GitHub": {
+                "name": "GitHub",
+                "image": "/skills/github.svg",
+                "category": "Outros"
+            },
+            "Postman": {
+                "name": "Postman",
+                "image": "/skills/postman.svg",
+                "category": "Outros"
+            }
+        }
+    },
+    "Projects": {
+        "title": "Projetos",
+        "techstack": "Tecnologias Utilizadas",
+        "web": {
+            "title": "Desenvolvimento Web",
+            "nestjs_microservices": {
+                "name": "Microserviços NestJS + Redis",
+                "image": "https://nestjs.com/img/nest-og.png",
+                "techstack": "NestJS, MicroServices, Supabase, Firebase, Redis, Docker, Typescript, TurboPack",
+                "category": "Desenvolvimento Web",
+                "links": {
+                    "visit": "",
+                    "code": "https://github.com/Costaa18/weather-turbo",
+                    "video": ""
+                }
+            },
+            "portfolio": {
+                "name": "Portfolio",
+                "image": "/projects/portfolio.png",
+                "techstack": "NextJS, Tailwind CSS, Typescript",
+                "category": "Desenvolvimento Web",
+                "links": {
+                    "visit": "https://afonsoveloso.com",
+                    "code": "https://github.com/Costaa18/portfolio",
+                    "video": ""
+                }
+            }
+        },
+        "desktop": {
+            "title": "Desenvolvimento Desktop",
+            "BookStore": {
+                "name": "BookStore IPCA",
+                "image": "https://hayqsystem.am/wp-content/uploads/2024/02/jhgj-4.jpg",
+                "techstack": "C#",
+                "category": "Desenvolvimento Desktop",
+                "links": {
+                    "visit": "",
+                    "code": "https://github.com/Costaa18/BookStore-IPCA",
+                    "video": ""
+                }
+            }
+        }
+    },
+    "Experience": {
+        "title": "Experiência",
+        "experience": "Experiência",
+        "education": "Educação",
+        "okay": "Ok, Já percebi!",
+        "view all": "Ver tudo",
+        "career": {
+            "Addup": {
+                "company": "Addup",
+                "position": "Estagiário",
+                "startDate": "Março 2023",
+                "endDate": "Julho 2023",
+                "desc": "Desenvolvi diversos sites em WordPress para diversas empresas, customizando funcionalidades para atender às necessidades específicas de cada cliente. | Adquiri habilidades em marketing digital e gerenciei hospedagem compartilhada para clientes da empresa. | Desenvolvi uma plataforma de geração e gerenciamento de QR Codes utilizando Node.js e Express, permitindo a criação de QR Codes personalizados (vCards, links, entre outros) e integrando recursos de analytics para monitorar visualizações, localização geográfica, dispositivos utilizados e outras métricas relevantes ."
+            },
+            "BeIT-Solutions": {
+                "company": "BeIT-Solutions",
+                "position": "Estagiário",
+                "startDate": "Fevereiro 2022",
+                "endDate": "Março 2022",
+                "desc": "Concluí cursos de formação em SAP S/4HANA, desenvolvendo competências em sistemas ERP. | Desenvolvi e implementei o site da empresa AMI-SYS (atual BeIT-Solutions) utilizando WordPress."
+            }
+        },
+        "educations": {
+            "university": {
+                "institute": "Instituto Politécnico do Cávado e do Ave",
+                "degree": "CTeSP em Desenvolvimento Web e Multimédia",
+                "startDate": "2023",
+                "endDate": "Presente",
+                "desc": "Estou a desenvolver o meu entendimento em UX/UI Design, aprendendo os princípios de criação de designs centrados no utilizador e melhorando a experiência do utilizador. | Estou a aprimorar as minhas competências em Desenvolvimento Web e Desenvolvimento de Aplicações para Desktop, com foco na criação de aplicações funcionais e fáceis de usar. | Estou a adquirir conhecimento prático em edição multimédia e a melhorar a minha compreensão de gestão de projetos, com ênfase na organização e execução eficaz de projetos."
+            },
+            "high school": {
+                "institute": "Escola Secundária Camilo Castelo Branco",
+                "degree": "Técnico de Gestão de Sistemas Informáticos",
+                "startDate": "2020",
+                "endDate": "2023",
+                "desc": "Adquiri uma sólida compreensão de Estruturas de Dados, Sistemas Operativos e Programação Orientada por Objetos, estabelecendo uma base para o desenvolvimento de software. | Obtive conhecimentos em Desenvolvimento Web e Desenvolvimento de Aplicações Móveis, aprendendo a criar websites e aplicações móveis simples. | Desenvolvi competências fundamentais em MySQL, incluindo a criação e gestão de bases de dados para aplicações web e móveis."
+            }
+        }
+    },
+    "Contact": {
+        "title": "Fale Comigo",
+        "subtitle": "Entre em contacto 🎉",
+        "work together": "Vamos trabalhar juntos?",
+        "my box": "A minha caixa de entrada está sempre aberta! 💌",
+        "full name": "Nome Completo *",
+        "email": "Email *",
+        "message": "Mensagem *",
+        "send": "Diga Olá 👋"
+    },
+    "Footer": {
+        "made": "Feito com",
+        "by": "por"
+    }
+}

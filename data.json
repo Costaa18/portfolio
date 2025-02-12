@@ -1,12 +1,6 @@
 {
   "main": {
-    "name": "Afonso Veloso",
-    "titles": [
-      "Backend Development",
-      "Web Development"
-    ],
     "heroImage": "/me.jpg",
-    "shortDesc": "I focus on developing user-friendly web applications that meet the client's requirements, with attention to detail, scalability, and performance.",
     "techStackImages": [
       "/skills/nestjs.svg",
       "https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000",
@@ -196,7 +190,7 @@
   ],
   "educations": [
     {
-      "institute": "Camilo Castelo Branco Secondary School",
+      "institute": "Escola Secundária Camilo Castelo Branco",
       "degree": "Information Systems Management and Programming Technician: High School Diploma",
       "startDate": "2020",
       "endDate": "2023",
@@ -207,7 +201,7 @@
       ]
     },
     {
-      "institute": "Polytechnic Institute of Cávado and Ave",
+      "institute": "Instituto Politécnico do Cávado e do Ave",
       "degree": "Web Development and Multimedia: CTeSP",
       "startDate": "2023",
       "endDate": "Present",
