@@ -1,4 +1,8 @@
 {
+  "Languages": {
+    "en": "English",
+    "pt": "Portuguese"
+  },
   "Header": {
     "navbar": {
       "home": "Home",
@@ -149,6 +153,7 @@
   },
   "Projects": {
     "title": "Projects",
+    "techstack": "Tech Stack",
     "web": {
       "title": "Web Development",
       "nestjs_microservices": {
@@ -176,14 +181,16 @@
     },
     "desktop": {
       "title": "Desktop Development",
-      "name": "BookStore IPCA",
-      "image": "https://hayqsystem.am/wp-content/uploads/2024/02/jhgj-4.jpg",
-      "techstack": "C#",
-      "category": "Desktop Development",
-      "links": {
-        "visit": "",
-        "code": "https://github.com/Costaa18/BookStore-IPCA",
-        "video": ""
+      "BookStore": {
+        "name": "BookStore IPCA",
+        "image": "https://hayqsystem.am/wp-content/uploads/2024/02/jhgj-4.jpg",
+        "techstack": "C#",
+        "category": "Desktop Development",
+        "links": {
+          "visit": "",
+          "code": "https://github.com/Costaa18/BookStore-IPCA",
+          "video": ""
+        }
       }
     }
   },

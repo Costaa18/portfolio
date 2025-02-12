@@ -1,4 +1,8 @@
 {
+    "Languages": {
+        "en": "English",
+        "pt": "Portuguese"
+    },
     "Header": {
         "navbar": {
             "home": "Início",
@@ -149,10 +153,11 @@
     },
     "Projects": {
         "title": "Projetos",
+        "techstack": "Tecnologias Utilizadas",
         "web": {
             "title": "Desenvolvimento Web",
             "nestjs_microservices": {
-                "name": "NestJS Microservices + Redis",
+                "name": "Microserviços NestJS + Redis",
                 "image": "https://nestjs.com/img/nest-og.png",
                 "techstack": "NestJS, MicroServices, Supabase, Firebase, Redis, Docker, Typescript, TurboPack",
                 "category": "Desenvolvimento Web",
@@ -176,14 +181,16 @@
         },
         "desktop": {
             "title": "Desenvolvimento Desktop",
-            "name": "BookStore IPCA",
-            "image": "https://hayqsystem.am/wp-content/uploads/2024/02/jhgj-4.jpg",
-            "techstack": "C#",
-            "category": "Desenvolvimento Desktop",
-            "links": {
-                "visit": "",
-                "code": "https://github.com/Costaa18/BookStore-IPCA",
-                "video": ""
+            "BookStore": {
+                "name": "BookStore IPCA",
+                "image": "https://hayqsystem.am/wp-content/uploads/2024/02/jhgj-4.jpg",
+                "techstack": "C#",
+                "category": "Desenvolvimento Desktop",
+                "links": {
+                    "visit": "",
+                    "code": "https://github.com/Costaa18/BookStore-IPCA",
+                    "video": ""
+                }
             }
         }
     },
