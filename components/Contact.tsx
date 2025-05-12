@@ -38,15 +38,15 @@ const Contact = () => {
           setValues({ name: "", email: "", message: "" });
           setLoading(false);
           setSuccess(true);
-          toast.success(res.data.message);
+          toast.success(t("success"));
         } else {
           setLoading(false);
-          toast.error(res.data.message);
+          toast.error(t("error"));
         }
       })
       .catch((err) => {
         setLoading(false);
-        toast.error(err.message);
+        toast.error(t("error"));
       });
   };
 
@@ -65,11 +65,11 @@ const Contact = () => {
       <div className="w-full lg:w-5/6 2xl:w-3/4 mt-10 md:mt-16 mx-auto flex justify-between rounded-xl">
         {/* blurDataURL="https://i.imgur.com/owZdhjA.png" */}
         <Image
-          unoptimized={true}
+          draggable="false"
           quality={100}
           alt="contact"
           src="/contact.png"
-          className="hidden md:block w-1/2 h-full object-cover"
+          className="hidden md:block w-1/2 h-full object-cover pointer-events-none select-none drag-none"
           width={1000}
           height={1000}
         />

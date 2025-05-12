@@ -66,8 +66,6 @@ const Projects = () => {
     setCategory(cat);
   };
 
-  console.log("Projects", JSON.stringify(projects));
-
   return (
     <SectionWrapper id="projects" className="mx-4 md:mx-0 min-h-screen">
       <h2 className="text-4xl text-center">{t("title")}</h2>

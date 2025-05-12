@@ -53,6 +53,7 @@ export default function Header() {
     >
       <nav className="lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex items-center justify-between">
         <Link
+          aria-label="Logo"
           href="/"
           className="2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 transition-colors duration-300"
         >
@@ -74,31 +75,33 @@ export default function Header() {
             {/* <span className="text-xl font-medium">Afonso Veloso</span> */}
           </span>
         </Link>
-
-        <ul className="flex items-center gap-8">
-          {navKeys.map((key) => (
-            <li key={key}>
-              <ScrollLink
-                href={`#${key}`} // Usando a chave para navegar para o id correto da div
-                className="hover:text-violet-700 hover:dark:text-violet-500 transition-colors capitalize cursor-pointer"
-                to={key} // Usando a chave para navegar
-                offset={-60}
-                smooth={true}
-                duration={500}
-                isDynamic={true}
-              >
-                {navMap[key]} {/* Exibindo a tradução correta */}
-              </ScrollLink>
-            </li>
-          ))}
+        <div className="flex items-center gap-8">
+          <ul className="flex items-center gap-8">
+            {navKeys.map((key) => (
+              <li key={key}>
+                <ScrollLink
+                  href={`#${key}`} // Usando a chave para navegar para o id correto da div
+                  className="hover:text-violet-700 hover:dark:text-violet-500 transition-colors capitalize cursor-pointer"
+                  to={key} // Usando a chave para navegar
+                  offset={-80}
+                  smooth={true}
+                  duration={500}
+                  isDynamic={true}
+                >
+                  {navMap[key]} {/* Exibindo a tradução correta */}
+                </ScrollLink>
+              </li>
+            ))}
+          </ul>
           <button
+            aria-label="Toggle theme"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="hover:bg-gray-100 hover:dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors"
           >
             {theme === "dark" ? <FiSun /> : <FiMoon />}
           </button>
           <LanguageSwitcher /> {/* Merge Error */}
-        </ul>
+        </div>
       </nav>
 
       <nav className="p-4 flex sm:hidden items-center justify-between">
@@ -143,13 +146,13 @@ export default function Header() {
         <div className="w-1/4" onClick={() => setNavCollapse(true)}></div>
 
         <div className="flex flex-col p-4 gap-5 bg-gray-100/95 backdrop-filter backdrop-blur-sm dark:bg-grey-900/95 w-3/4">
-          <CgClose className="self-end my-2" size={20} onClick={() => setNavCollapse(true)} />
-
+          <CgClose className="self-end my-2" size={20} onClick={() => setNavCollapse(true)} />{" "}
           {navKeys.slice(0, 4).map((key) => (
             <ScrollLink
               key={key}
               className="hover:text-purple-600 py-1.5 px-4 rounded transition-colors capitalize cursor-pointer"
               to={key} // Usando a chave para navegar
+              href={`#${key}`} // Adding href for crawlability
               offset={-60}
               smooth={true}
               duration={500}
@@ -158,9 +161,10 @@ export default function Header() {
             >
               {navMap[key]} {/* Exibindo a tradução correta */}
             </ScrollLink>
-          ))}
+          ))}{" "}
           <ScrollLink
             to="contact"
+            href="#contact"
             offset={-60}
             smooth={true}
             duration={500}

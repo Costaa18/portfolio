@@ -1,62 +1,62 @@
 {
     "NotFound": {
-        "title": "Página não encontrada",
-        "message": "Desculpe, a página que procura não existe.",
-        "button": "Voltar ao Início"
+        "title": "Seite nicht gefunden",
+        "message": "Es tut uns leid, die gesuchte Seite existiert nicht.",
+        "button": "Zurück zur Startseite"
     },
     "Languages": {
-        "en": "English",
-        "pt": "Portuguese"
+        "en": "Englisch",
+        "pt": "Portugiesisch"
     },
     "Header": {
         "navbar": {
-            "home": "Início",
-            "skills": "Habilidades",
-            "projects": "Projetos",
-            "experience": "Experiência",
-            "contact": "Contacto"
+            "home": "Startseite",
+            "skills": "Fähigkeiten",
+            "projects": "Projekte",
+            "experience": "Erfahrung",
+            "contact": "Kontakt"
         }
     },
     "Hero": {
-        "greeting": "Olá",
-        "iam": "Sou o",
-        "i am into": "Eu trabalho com",
+        "greeting": "Hallo",
+        "iam": "Ich bin",
+        "i am into": "Ich interessiere mich für",
         "name": "Afonso Veloso",
-        "titles": "Desenvolvimento Backend, Desenvolvimento Web",
-        "shortDesc": "Eu foco no desenvolvimento de aplicações web amigáveis que atendam aos requisitos do cliente, com atenção aos detalhes, escalabilidade e desempenho.",
-        "resume": "Currículo",
-        "resumeLink": "/cv/Afonso_Veloso_Curriculo_pt.pdf"
+        "titles": "Backend-Entwicklung, Webentwicklung",
+        "shortDesc": "Ich konzentriere mich auf die Entwicklung benutzerfreundlicher Webanwendungen, die den Anforderungen der Kunden entsprechen – mit Fokus auf Details, Skalierbarkeit und Leistung.",
+        "resume": "Lebenslauf",
+        "resumeLink": "/cv/Afonso_Veloso_Curriculum_de.pdf"
     },
     "Skills": {
-        "title": "Habilidades"
+        "title": "Fähigkeiten"
     },
     "SkillsData": {
         "Languages": {
-            "title": "Linguagens",
+            "title": "Programmiersprachen",
             "JavaScript": {
                 "name": "JavaScript",
                 "image": "/skills/javascript.svg",
-                "category": "Linguagens de Programação"
+                "category": "Programmiersprachen"
             },
             "TypeScript": {
                 "name": "TypeScript",
                 "image": "/skills/typescript.svg",
-                "category": "Linguagens de Programação"
+                "category": "Programmiersprachen"
             },
             "C#": {
                 "name": "C#",
                 "image": "/skills/c-sharp.svg",
-                "category": "Linguagens de Programação"
+                "category": "Programmiersprachen"
             },
             "Python": {
                 "name": "Python",
                 "image": "/skills/python.svg",
-                "category": "Linguagens de Programação"
+                "category": "Programmiersprachen"
             },
             "PHP": {
                 "name": "PHP",
                 "image": "/skills/php.svg",
-                "category": "Linguagens de Programação"
+                "category": "Programmiersprachen"
             }
         },
         "Frontend": {
@@ -151,31 +151,31 @@
             }
         },
         "Database": {
-            "title": "Base de Dados",
+            "title": "Datenbanken",
             "PostgreSQL": {
                 "name": "PostgreSQL",
                 "image": "/skills/postgres.svg",
-                "category": "Base de Dados"
+                "category": "Datenbanken"
             },
             "MongoDB": {
                 "name": "MongoDB",
                 "image": "/skills/mongodb.svg",
-                "category": "Base de Dados"
+                "category": "Datenbanken"
             },
             "Firebase": {
                 "name": "Firebase",
                 "image": "/skills/firebase.svg",
-                "category": "Base de Dados"
+                "category": "Datenbanken"
             },
             "Supabase": {
                 "name": "Supabase",
                 "image": "/skills/supabase.svg",
-                "category": "Base de Dados"
+                "category": "Datenbanken"
             },
             "MySQL": {
                 "name": "MySQL",
                 "image": "/skills/mysql.svg",
-                "category": "Base de Dados"
+                "category": "Datenbanken"
             }
         },
         "DevOps": {
@@ -183,50 +183,50 @@
             "Git": {
                 "name": "Git",
                 "image": "/skills/git.svg",
-                "category": "Ferramentas e DevOps"
+                "category": "Tools und DevOps"
             },
             "Docker": {
                 "name": "Docker",
                 "image": "/skills/docker.svg",
-                "category": "Ferramentas e DevOps"
+                "category": "Tools und DevOps"
             },
             "GitHub": {
                 "name": "GitHub",
                 "image": "/skills/github.svg",
-                "category": "Ferramentas e DevOps"
+                "category": "Tools und DevOps"
             },
             "Postman": {
                 "name": "Postman",
                 "image": "/skills/postman.svg",
-                "category": "Ferramentas e DevOps"
+                "category": "Tools und DevOps"
             },
             "Vercel": {
                 "name": "Vercel",
                 "image": "/skills/vercel.svg",
-                "category": "Ferramentas e DevOps"
+                "category": "Tools und DevOps"
             },
             "AWS": {
                 "name": "AWS",
                 "image": "/skills/aws.svg",
-                "category": "Ferramentas e DevOps"
+                "category": "Tools und DevOps"
             },
             "Cloudflare": {
                 "name": "Cloudflare",
                 "image": "/skills/cloudflare.svg",
-                "category": "Ferramentas e DevOps"
+                "category": "Tools und DevOps"
             }
         }
     },
     "Projects": {
-        "title": "Projetos",
-        "techstack": "Tecnologias Utilizadas",
+        "title": "Projekte",
+        "techstack": "Technologie-Stack",
         "web": {
-            "title": "Desenvolvimento Web",
+            "title": "Webentwicklung",
             "nestjs_microservices": {
-                "name": "Microserviços NestJS + Redis",
+                "name": "NestJS Microservices + Redis",
                 "image": "https://nestjs.com/img/nest-og.png",
                 "techstack": "NestJS, MicroServices, Supabase, Firebase, Redis, Docker, Typescript, TurboPack",
-                "category": "Desenvolvimento Web",
+                "category": "Webentwicklung",
                 "links": {
                     "visit": "",
                     "code": "https://github.com/Costaa18/weather-turbo",
@@ -237,7 +237,7 @@
                 "name": "Portfolio",
                 "image": "/projects/portfolio.png",
                 "techstack": "NextJS, Tailwind CSS, Typescript",
-                "category": "Desenvolvimento Web",
+                "category": "Webentwicklung",
                 "links": {
                     "visit": "https://afonsoveloso.com",
                     "code": "https://github.com/Costaa18/portfolio",
@@ -246,12 +246,12 @@
             }
         },
         "desktop": {
-            "title": "Desenvolvimento Desktop",
+            "title": "Desktop-Entwicklung",
             "BookStore": {
                 "name": "BookStore IPCA",
                 "image": "https://hayqsystem.am/wp-content/uploads/2024/02/jhgj-4.jpg",
                 "techstack": "C#",
-                "category": "Desenvolvimento Desktop",
+                "category": "Desktop-Entwicklung",
                 "links": {
                     "visit": "",
                     "code": "https://github.com/Costaa18/BookStore-IPCA",
@@ -261,58 +261,58 @@
         }
     },
     "Experience": {
-        "title": "Experiência",
-        "experience": "Experiência",
-        "education": "Educação",
-        "okay": "Ok, Já percebi!",
-        "view all": "Ver tudo",
+        "title": "Erfahrung",
+        "experience": "Berufserfahrung",
+        "education": "Ausbildung",
+        "okay": "Alles klar!",
+        "view all": "Alle anzeigen",
         "career": {
             "Addup": {
                 "company": "Addup",
-                "position": "Estagiário",
-                "startDate": "Março 2023",
-                "endDate": "Julho 2023",
-                "desc": "Desenvolvi diversos sites em WordPress para diversas empresas, customizando funcionalidades para atender às necessidades específicas de cada cliente. | Adquiri habilidades em marketing digital e gerenciei hospedagem compartilhada para clientes da empresa. | Desenvolvi uma plataforma de geração e gerenciamento de QR Codes utilizando Node.js e Express, permitindo a criação de QR Codes personalizados (vCards, links, entre outros) e integrando recursos de analytics para monitorar visualizações, localização geográfica, dispositivos utilizados e outras métricas relevantes ."
+                "position": "Praktikant",
+                "startDate": "März 2023",
+                "endDate": "Juli 2023",
+                "desc": "Ich habe mehrere Websites mit WordPress für verschiedene Unternehmen entwickelt und Funktionen angepasst, um die spezifischen Anforderungen jedes Kunden zu erfüllen. | Ich habe Fähigkeiten im digitalen Marketing erworben und Shared Hosting für Kunden des Unternehmens verwaltet. | Ich habe eine Plattform zur Erstellung und Verwaltung von QR-Codes mit Node.js und Express entwickelt, die personalisierte QR-Codes (vCards, Links usw.) erstellen kann und Analysefunktionen zur Überwachung von Aufrufen, geografischen Standorten, verwendeten Geräten und anderen Metriken enthält."
             },
             "BeIT-Solutions": {
                 "company": "BeIT-Solutions",
-                "position": "Estagiário",
-                "startDate": "Fevereiro 2022",
-                "endDate": "Março 2022",
-                "desc": "Concluí cursos de formação em SAP S/4HANA, desenvolvendo competências em sistemas ERP. | Desenvolvi e implementei o site da empresa AMI-SYS (atual BeIT-Solutions) utilizando WordPress."
+                "position": "Praktikant",
+                "startDate": "Februar 2022",
+                "endDate": "März 2022",
+                "desc": "Ich habe Schulungen in SAP S/4HANA abgeschlossen und dabei Fähigkeiten im Umgang mit ERP-Systemen entwickelt. | Ich habe die Website für das Unternehmen AMI-SYS (jetzt BeIT-Solutions) mit WordPress entwickelt und implementiert."
             }
         },
         "educations": {
             "university": {
-                "institute": "Instituto Politécnico do Cávado e do Ave",
-                "degree": "CTeSP em Desenvolvimento Web e Multimédia",
+                "institute": "Polytechnisches Institut von Cávado und Ave",
+                "degree": "Webentwicklung und Multimedia: CTeSP",
                 "startDate": "2023",
-                "endDate": "Presente",
-                "desc": "Estou a desenvolver o meu entendimento em UX/UI Design, aprendendo os princípios de criação de designs centrados no utilizador e melhorando a experiência do utilizador. | Estou a aprimorar as minhas competências em Desenvolvimento Web e Desenvolvimento de Aplicações para Desktop, com foco na criação de aplicações funcionais e fáceis de usar. | Estou a adquirir conhecimento prático em edição multimédia e a melhorar a minha compreensão de gestão de projetos, com ênfase na organização e execução eficaz de projetos."
+                "endDate": "Gegenwart",
+                "desc": "Ich entwickle mein Verständnis für UX/UI-Design weiter und lerne die Prinzipien der benutzerzentrierten Gestaltung zur Verbesserung der Benutzererfahrung. | Ich verbessere meine Fähigkeiten in der Webentwicklung und der Entwicklung von Desktop-Anwendungen mit dem Fokus auf funktionale und benutzerfreundliche Anwendungen. | Ich erwerbe praktische Kenntnisse in der Multimedia-Bearbeitung und verbessere mein Verständnis für Projektmanagement mit Fokus auf effektive Organisation und Umsetzung."
             },
             "high school": {
-                "institute": "Escola Secundária Camilo Castelo Branco",
-                "degree": "Técnico de Gestão de Sistemas Informáticos",
+                "institute": "Sekundarschule Camilo Castelo Branco",
+                "degree": "Fachkraft für Informationssysteme und Programmierung: Abitur",
                 "startDate": "2020",
                 "endDate": "2023",
-                "desc": "Adquiri uma sólida compreensão de Estruturas de Dados, Sistemas Operativos e Programação Orientada por Objetos, estabelecendo uma base para o desenvolvimento de software. | Obtive conhecimentos em Desenvolvimento Web e Desenvolvimento de Aplicações Móveis, aprendendo a criar websites e aplicações móveis simples. | Desenvolvi competências fundamentais em MySQL, incluindo a criação e gestão de bases de dados para aplicações web e móveis."
+                "desc": "Ich habe ein solides Verständnis für Datenstrukturen, Betriebssysteme und objektorientierte Programmierung erworben – die Grundlage für die Softwareentwicklung. | Ich habe Kenntnisse in der Webentwicklung und der Entwicklung mobiler Anwendungen erlangt und gelernt, Websites und einfache mobile Apps zu erstellen. | Ich habe grundlegende Kenntnisse in MySQL entwickelt, einschließlich der Erstellung und Verwaltung von Datenbanken für Web- und Mobilanwendungen."
             }
         }
     },
     "Contact": {
-        "title": "Fale Comigo",
-        "subtitle": "Entre em contacto 🎉",
-        "work together": "Vamos trabalhar juntos?",
-        "my box": "A minha caixa de entrada está sempre aberta! 💌",
-        "full name": "Nome Completo *",
-        "email": "Email *",
-        "message": "Mensagem *",
-        "send": "Diga Olá 👋",
-        "success": "Mensagem enviada com sucesso! Vou responder o mais rápido possível.",
-        "error": "Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde."
+        "title": "Kontaktiere mich",
+        "subtitle": "Melde dich 🎉",
+        "work together": "Wollen wir zusammenarbeiten?",
+        "my box": "Mein Posteingang ist immer offen! 💌",
+        "full name": "Vollständiger Name *",
+        "email": "E-Mail *",
+        "message": "Nachricht *",
+        "send": "Sag Hallo 👋",
+        "success": "Nachricht erfolgreich gesendet! Ich melde mich so schnell wie möglich.",
+        "error": "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuche es später noch einmal."
     },
     "Footer": {
-        "made": "Feito com",
-        "by": "por"
+        "made": "Erstellt mit",
+        "by": "von"
     }
 }

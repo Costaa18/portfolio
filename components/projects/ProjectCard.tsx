@@ -40,6 +40,7 @@ const Project = ({ name, image, category, techstack, links }: project) => {
           <div className="absolute top-0 scale-x-0 group-hover:scale-100 transition-transform origin-left duration-200 ease-linear bg-gray-800 bg-opacity-60 w-full h-full rounded-lg flex items-center gap-4 justify-center">
             {links.visit.trim() && (
               <Link
+                aria-label="Visit website"
                 href={links.visit}
                 target="_blank"
                 className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all"
@@ -49,6 +50,7 @@ const Project = ({ name, image, category, techstack, links }: project) => {
             )}
             {links.code.trim() && (
               <Link
+                aria-label="View code"
                 href={links.code}
                 target="_blank"
                 className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all"
@@ -58,6 +60,7 @@ const Project = ({ name, image, category, techstack, links }: project) => {
             )}
             {links.video.trim() && (
               <Link
+                aria-label="View video"
                 href={links.video}
                 target="_blank"
                 className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all"

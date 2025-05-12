@@ -1,4 +1,9 @@
 {
+  "NotFound": {
+    "title": "Page not found",
+    "message": "Sorry, the page you are looking for does not exist.",
+    "button": "Back to Home"
+  },
   "Languages": {
     "en": "English",
     "pt": "Portuguese"
@@ -20,12 +25,40 @@
     "titles": "Backend Development, Web Development",
     "shortDesc": "I focus on developing user-friendly web applications that meet the client's requirements, with attention to detail, scalability, and performance.",
     "resume": "Resume",
-    "resumeLink": "/Afonso_Veloso_Resume_en.pdf"
+    "resumeLink": "/cv/Afonso_Veloso_Curriculum_en.pdf"
   },
   "Skills": {
     "title": "Skills"
   },
   "SkillsData": {
+    "Languages": {
+      "title": "Languages",
+      "JavaScript": {
+        "name": "JavaScript",
+        "image": "/skills/javascript.svg",
+        "category": "Programming Languages"
+      },
+      "TypeScript": {
+        "name": "TypeScript",
+        "image": "/skills/typescript.svg",
+        "category": "Programming Languages"
+      },
+      "C#": {
+        "name": "C#",
+        "image": "/skills/c-sharp.svg",
+        "category": "Programming Languages"
+      },
+      "Python": {
+        "name": "Python",
+        "image": "/skills/python.svg",
+        "category": "Programming Languages"
+      },
+      "PHP": {
+        "name": "PHP",
+        "image": "/skills/php.svg",
+        "category": "Programming Languages"
+      }
+    },
     "Frontend": {
       "title": "Frontend",
       "React": {
@@ -38,19 +71,14 @@
         "image": "/skills/nextjs.svg",
         "category": "Frontend"
       },
-      "JavaScript": {
-        "name": "JavaScript",
-        "image": "/skills/javascript.svg",
+      "React Query": {
+        "name": "React Query",
+        "image": "/skills/react-query.svg",
         "category": "Frontend"
       },
-      "TypeScript": {
-        "name": "TypeScript",
-        "image": "/skills/typescript.svg",
-        "category": "Frontend"
-      },
-      "Shadcn/ui": {
-        "name": "Shadcn/ui",
-        "image": "/skills/shadcn.svg",
+      "Zustand": {
+        "name": "Zustand",
+        "image": "/skills/zustand.svg",
         "category": "Frontend"
       },
       "Tailwind CSS": {
@@ -58,29 +86,19 @@
         "image": "/skills/tailwindcss.svg",
         "category": "Frontend"
       },
-      "HTML5": {
-        "name": "HTML5",
-        "image": "/skills/html5.svg",
+      "Shadcn/ui": {
+        "name": "Shadcn/ui",
+        "image": "/skills/shadcn.svg",
         "category": "Frontend"
       },
-      "CSS3": {
-        "name": "CSS3",
-        "image": "/skills/css3.svg",
+      "Zod": {
+        "name": "Zod",
+        "image": "/skills/zod.svg",
         "category": "Frontend"
       },
-      "WordPress": {
-        "name": "WordPress",
-        "image": "/skills/wordpress.svg",
-        "category": "Frontend"
-      },
-      "Bootstrap": {
-        "name": "Bootstrap",
-        "image": "/skills/bootstrap.svg",
-        "category": "Frontend"
-      },
-      "Sass": {
-        "name": "Sass",
-        "image": "/skills/sass.svg",
+      "Framer Motion": {
+        "name": "Framer Motion",
+        "image": "/skills/framer-motion.svg",
         "category": "Frontend"
       }
     },
@@ -101,53 +119,101 @@
         "image": "/skills/nestjs.svg",
         "category": "Backend"
       },
-      "Firebase": {
-        "name": "Firebase",
-        "image": "/skills/firebase.svg",
+      "Redis": {
+        "name": "Redis",
+        "image": "/skills/redis.svg",
         "category": "Backend"
+      },
+      "WebSockets": {
+        "name": "WebSockets",
+        "image": "/skills/websockets.svg",
+        "category": "Backend"
+      },
+      "Webhooks": {
+        "name": "Webhooks",
+        "image": "/skills/webhooks.svg",
+        "category": "Backend"
+      },
+      "tRPC": {
+        "name": "tRPC",
+        "image": "/skills/trpc.svg",
+        "category": "Backend"
+      },
+      "Prisma": {
+        "name": "Prisma",
+        "image": "/skills/prisma.svg",
+        "category": "Backend"
+      },
+      "JWT": {
+        "name": "JWT",
+        "image": "/skills/jwt.svg",
+        "category": "Backend"
+      }
+    },
+    "Database": {
+      "title": "Database",
+      "PostgreSQL": {
+        "name": "PostgreSQL",
+        "image": "/skills/postgres.svg",
+        "category": "Database"
       },
       "MongoDB": {
         "name": "MongoDB",
         "image": "/skills/mongodb.svg",
-        "category": "Backend"
+        "category": "Database"
       },
-      "PostgreSQL": {
-        "name": "PostgreSQL",
-        "image": "/skills/postgres.svg",
-        "category": "Backend"
+      "Firebase": {
+        "name": "Firebase",
+        "image": "/skills/firebase.svg",
+        "category": "Database"
+      },
+      "Supabase": {
+        "name": "Supabase",
+        "image": "/skills/supabase.svg",
+        "category": "Database"
       },
       "MySQL": {
         "name": "MySQL",
         "image": "/skills/mysql.svg",
-        "category": "Backend"
-      },
-      "PHP": {
-        "name": "PHP",
-        "image": "/skills/php.svg",
-        "category": "Backend"
+        "category": "Database"
       }
     },
-    "Others": {
-      "title": "Others",
+    "DevOps": {
+      "title": "DevOps",
       "Git": {
         "name": "Git",
         "image": "/skills/git.svg",
-        "category": "Others"
+        "category": "Tools and DevOps"
       },
       "Docker": {
         "name": "Docker",
         "image": "/skills/docker.svg",
-        "category": "Others"
+        "category": "Tools and DevOps"
       },
       "GitHub": {
         "name": "GitHub",
         "image": "/skills/github.svg",
-        "category": "Others"
+        "category": "Tools and DevOps"
       },
       "Postman": {
         "name": "Postman",
         "image": "/skills/postman.svg",
-        "category": "Others"
+        "category": "Tools and DevOps"
+      },
+      "Vercel": {
+        "name": "Vercel",
+        "image": "/skills/vercel.svg",
+        "category": "Tools and DevOps"
+      },
+      "AWS": {
+        "name": "AWS",
+        "image": "/skills/aws.svg",
+        "category": "Tools and DevOps"
+      },
+      "Cloudflare": {
+        "name": "Cloudflare",
+        "image": "/skills/cloudflare.svg",
+        "category": "Tools and DevOps"
       }
     }
   },
@@ -241,7 +307,9 @@
     "full name": "Full Name *",
     "email": "Email *",
     "message": "Message *",
-    "send": "Say Hello 👋"
+    "send": "Say Hello 👋",
+    "success": "Message sent successfully! I will get back to you as soon as possible.",
+    "error": "An error occurred while sending the message. Please try again later."
   },
   "Footer": {
     "made": "Made with",

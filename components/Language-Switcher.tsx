@@ -27,6 +27,10 @@ export function LanguageSwitcher() {
   const availableLocales = [
     { code: "en", label: "EN", flag: "/flags/en.svg" },
     { code: "pt", label: "PT", flag: "/flags/pt.svg" },
+    { code: "de", label: "DE", flag: "/flags/de.svg" },
+    { code: "fr", label: "FR", flag: "/flags/fr.svg" },
+    { code: "it", label: "IT", flag: "/flags/it.svg" },
+    { code: "es", label: "ES", flag: "/flags/es.svg" },
   ];
 
   const selectedLocale = availableLocales.find((l) => l.code === locale) || availableLocales[0];
@@ -34,19 +38,15 @@ export function LanguageSwitcher() {
 
   return (
     <div className="relative">
-      <button
-        ref={buttonRef}
-        className="flex items-center px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg shadow-md transition duration-300 hover:bg-gray-800"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+      <button ref={buttonRef} className="flex items-center bg-transparent" onClick={() => setIsOpen(!isOpen)}>
         {selectedLocale && (
           <Image src={selectedLocale.flag} alt={selectedLocale.label} width={28} height={20} className="rounded-sm" />
         )}
-        <ChevronDown className="ml-2 w-5 h-5 text-white" />
+        <ChevronDown className="ml-2 w-5 h-5 text-primary" />
       </button>
       {isOpen && (
         <motion.div
-          className="absolute bg-gray-900 border border-gray-700 shadow-lg rounded-lg overflow-hidden z-10 mt-2"
+          className="absolute text-primary  overflow-hidden z-10 mt-2"
           style={{ width: buttonWidth }}
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -56,7 +56,7 @@ export function LanguageSwitcher() {
           {filteredLocales.map(({ code, flag, label }) => (
             <button
               key={code}
-              className="flex items-center gap-2 w-full px-4 py-2 text-white hover:bg-gray-800 transition duration-300"
+              className="flex items-center gap-2 w-full  py-2 text-primary transition duration-300"
               onClick={() => {
                 const newPath = pathname ? `/${code}${pathname.substring(3)}` : `/${code}`;
                 router.push(newPath);

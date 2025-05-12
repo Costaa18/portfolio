@@ -1,3 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- Página raiz (x-default) -->
+    <url>
+        <loc>https://afonsoveloso.com</loc>
+        <lastmod>2025-05-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://afonsoveloso.com"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://afonsoveloso.com/en"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://afonsoveloso.com/pt"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://afonsoveloso.com/de"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://afonsoveloso.com/fr"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://afonsoveloso.com/it"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://afonsoveloso.com/es"/>
+    </url>
+
+    <!-- Versão em Inglês -->
+    <url>
+        <loc>https://afonsoveloso.com/en</loc>
+        <lastmod>2025-05-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://afonsoveloso.com"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://afonsoveloso.com/en"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://afonsoveloso.com/pt"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://afonsoveloso.com/de"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://afonsoveloso.com/fr"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://afonsoveloso.com/it"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://afonsoveloso.com/es"/>
+    </url>
+
+    <!-- Versão em Português -->
+    <url>
+        <loc>https://afonsoveloso.com/pt</loc>
+        <lastmod>2025-05-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://afonsoveloso.com"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://afonsoveloso.com/en"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://afonsoveloso.com/pt"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://afonsoveloso.com/de"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://afonsoveloso.com/fr"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://afonsoveloso.com/it"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://afonsoveloso.com/es"/>
+    </url>
+
+    <!-- Versão em Alemão -->
+    <url>
+        <loc>https://afonsoveloso.com/de</loc>
+        <lastmod>2025-05-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://afonsoveloso.com"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://afonsoveloso.com/en"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://afonsoveloso.com/pt"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://afonsoveloso.com/de"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://afonsoveloso.com/fr"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://afonsoveloso.com/it"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://afonsoveloso.com/es"/>
+    </url>
+
+    <!-- Versão em Francês -->
+    <url>
+        <loc>https://afonsoveloso.com/fr</loc>
+        <lastmod>2025-05-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://afonsoveloso.com"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://afonsoveloso.com/en"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://afonsoveloso.com/pt"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://afonsoveloso.com/de"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://afonsoveloso.com/fr"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://afonsoveloso.com/it"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://afonsoveloso.com/es"/>
+    </url>
+
+    <!-- Versão em Italiano -->
+    <url>
+        <loc>https://afonsoveloso.com/it</loc>
+        <lastmod>2025-05-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://afonsoveloso.com"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://afonsoveloso.com/en"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://afonsoveloso.com/pt"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://afonsoveloso.com/de"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://afonsoveloso.com/fr"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://afonsoveloso.com/it"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://afonsoveloso.com/es"/>
+    </url>
+
+    <!-- Versão em Espanhol -->
+    <url>
+        <loc>https://afonsoveloso.com/es</loc>
+        <lastmod>2025-05-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://afonsoveloso.com"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://afonsoveloso.com/en"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://afonsoveloso.com/pt"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://afonsoveloso.com/de"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://afonsoveloso.com/fr"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://afonsoveloso.com/it"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://afonsoveloso.com/es"/>
+    </url>
+</urlset>

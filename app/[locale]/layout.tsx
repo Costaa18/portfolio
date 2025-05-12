@@ -26,7 +26,7 @@ export default async function RootLayout({
   // 🚀 Aguarde `params` antes de usá-lo
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as "en" | "pt")) {
+  if (!routing.locales.includes(locale as "en" | "pt" | "de" | "fr" | "it" | "es")) {
     notFound();
   }
 
