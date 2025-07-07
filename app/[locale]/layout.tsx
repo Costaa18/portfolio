@@ -8,6 +8,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -36,6 +37,9 @@ export default async function RootLayout({
     <html lang={locale}>
       <Head />
       <body className={`${poppins.className} bg-gray-100 dark:bg-grey-900 text-black dark:text-white min-h-screen`}>
+        {/* Google Tag Manager (noscript) */}
+        <GoogleAnalytics gaId="G-T0JNQTC169" />
+        {/* End Google Tag Manager (noscript) */}
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <div className="min-h-screen">
             <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
